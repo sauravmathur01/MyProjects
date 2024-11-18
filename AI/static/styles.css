@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f0f0f0; */
+    background-image: url('5178774.jpg');/* Path to your background image*/
+    backdrop-filter:var(300px);
+}
+
+.chat-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #c2e2a8;
+    background-image: url('ai-generated-7720850_1280.jpg'); /* Path to your background image */
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#message-list {
+    list-style-type: none; /* Remove bullets from list */
+    padding: 0; /* Remove default padding */
+}
+
+.chat-input {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space buttons evenly */
+    margin-top: 10px; /* Add some space above the input area */
+}
+.chat-header {
+    background-color: #33a7af63;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-messages {
+    padding: 20px;
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ff0000;
+    background-color: #fffefe31;
+    border-radius: 5px;
+    font-style: unset;
+    font-variant-emoji:emoji ;
+}
+
+.chat-messages ul {
+    list-style: none;
+    padding: 0;
+    color: #000000;
+    /* border: 1px solid #3b0505; */
+    background-color: #00eeff57;
+    /* background-image: url('10619.jpg'); Path to your background image */
+    backface-visibility:hidden;
+    font:message-box ;
+    font-style:italic;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.chat-messages li {
+    margin-bottom: 10px;
+}
+
+.chat-input {
+    padding: 20px;
+    text-align: center;
+}
+
+.chat-input button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #553a05;
+}
+
+.chat-output {
+    padding: 20px;
+    text-align: right;
+}
+
+.chat-output button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* .chat-output button:hover {
+    background-color: #553a05;
+} */
+
+header {
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        color: #fdf8f8;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition:ease-in-out
+      }
+
+      #mic-icon {
+        cursor: pointer; /* Change cursor to pointer for the icon */
+        margin-left: 10px; /* Space between input and icon */
+    }
