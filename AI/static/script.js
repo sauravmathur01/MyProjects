@@ -4,6 +4,10 @@ const messageList = document.getElementById('message-list');
 const sendButton = document.getElementById('send-button');
 const userInput = document.getElementById('user-input');
 const micIcon = document.getElementById('mic-icon');
+const hour = document.getElementById("hour");
+const minute = document.getElementById("minute");
+const week = document.querySelector(".week");
+
 
 startButton.addEventListener('click', () => {
     startListening();
@@ -18,13 +22,7 @@ sendButton.addEventListener('click', () => {
     if (userMessage) {
         displayMessage("YOU: " + userMessage);
         sendMessage(userMessage);
-        userInput.value = ""; // Clear the input box
-
-        // if (userMessage.toLowerCase().includes("bye")) {
-        //     stopListening();
-        //     displayMessage("Zax: Stopping listening. Goodbye!");
-        //     console.log("Voice recognition stopped.");
-        // }
+        userInput.value = ""; // Clear the input
     }
 });
 
@@ -51,9 +49,6 @@ function startListening() {
     // // Change the microphone icon to indicate it's active
     document.getElementById('mic-icon').classList.remove('fa-microphone-slash');
     document.getElementById('mic-icon').classList.add('fa-microphone');
-    // Change the microphone icon to indicate it's active
-    // micIcon.classList.remove('fa-microphone-slash');
-    // micIcon.classList.add('fa-microphone');
 
     recognition.onresult = function(event) {
         const userMessage = event.results[event.results.length - 1][0].transcript;
@@ -75,9 +70,6 @@ function startListening() {
     //     // Change the microphone icon back to inactive
     document.getElementById('mic-icon').classList.remove('fa-microphone');
     document.getElementById('mic-icon').classList.add('fa-microphone-slash');
-    // Change the microphone icon back to inactive
-    // micIcon.classList.remove('fa-microphone');
-    // micIcon.classList.add('fa-microphone-slash');
 
     };
 
@@ -122,3 +114,82 @@ function displayMessage(message) {
     messageElement.textContent = message;
     messageList.appendChild(messageElement);
 }
+function updateClock() {
+    const now = new Date();
+    hour.textContent = String(now.getHours()).padStart(2, "0");
+    minute.textContent = String(now.getMinutes()).padStart(2, "0");
+  
+    const dayIndex = now.getDay();
+    Array.from(week.children).forEach((ele, index) => {
+      ele.style.color = index === dayIndex ? "red" : "white";
+    });
+  }
+  
+  setInterval(updateClock, 1000);
+  updateClock();
+  function updateClock() {
+    const now = new Date();
+    hour.textContent = String(now.getHours()).padStart(2, "0");
+    minute.textContent = String(now.getMinutes()).padStart(2, "0");
+
+    const dayIndex = now.getDay();
+    Array.from(week.children).forEach((ele, index) => {
+        ele.style.color = index === dayIndex ? "red" : "white";
+    });
+
+    // Get the current date
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const currentDate = now.toLocaleDateString(undefined, options);
+    document.getElementById("current-date").textContent = currentDate; // Set the date
+}
+const userInputs = document.getElementById('user-input');
+const suggestionsContainer = document.getElementById('suggestions-container');
+
+const suggestions = [
+    "hello",
+    "how are you?",
+    "what is your name?",
+    "tell me a joke",
+    "goodbye",
+    "joke",
+    "how are you",
+    "Google",
+    "YouTube"
+
+];
+
+userInputs.addEventListener('input', function() {
+    const inputValue = this.value.toLowerCase();
+    suggestionsContainer.innerHTML = ''; // Clear previous suggestions
+    if (inputValue) {
+        const filteredSuggestions = suggestions.filter(suggestion => 
+            suggestion.toLowerCase().includes(inputValue)
+        );
+
+        filteredSuggestions.forEach(suggestion => {
+            const suggestionItem = document.createElement('div');
+            suggestionItem.classList.add('suggestion-item');
+            suggestionItem.textContent = suggestion;
+            suggestionItem.addEventListener('click', function() {
+                userInput.value = suggestion; // Set input value to clicked suggestion
+                suggestionsContainer.innerHTML = ''; // Clear suggestions
+            });
+            suggestionsContainer.appendChild(suggestionItem);
+        });
+
+        if (filteredSuggestions.length > 0) {
+            suggestionsContainer.style.display = 'block'; // Show suggestions
+        } else {
+            suggestionsContainer.style.display = 'none'; // Hide if no suggestions
+        }
+    } else {
+        suggestionsContainer.style.display = 'none'; // Hide if input is empty
+    }
+});
+
+// Hide suggestions when clicking outside
+document.addEventListener('click', function(event) {
+    if (!userInput.contains(event.target)) {
+        suggestionsContainer.style.display = 'none';
+    }
+});
