@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website - Saurav Kumar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/db6d7ab0c5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Saurav</span><br> Kumar From India</h1>
+        </div>
+    </div>
+</div>
+<!-- ------------------------ about ------------------- -->
+<div id="about"></div>
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/About_me.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel metus vel ipsum varius laoreet. Donec at orci vel ipsum varius laoreet. Donec at orci vel ipsum varius laoreet. Sed vel metus vel ipsum varius laoreet. Donec at orci vel ipsum varius laoreet.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab"id="skills">
+                    <ul>
+                        
+                        <li><span>Languages:</span><br>Python,Java,HTML,CSS,Basic JavaScript,SQL</li>
+                        <li><span>Developer Tools:</span><br>GitHub,Power BI,VS Code, Intellij Idea, Postman, Eclipse
+                        </li>
+                        <li>Cloud Computing:<span></span><br>AWS (Amazon Web Services)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"id="experience">
+                    <ul>
+                        
+                        <li><span>Salesforce Virtual Internship:</span><br>Developer <br> • Completed modules on Salesforce CRM, gaining practical knowledge of its features and functionalities.<br>
+                            • Worked on case studies and projects to apply CRM solutions in real-world scenarios.<br>
+                            • Developed and customized Salesforce applications using Apex and Visualforce.
+                            <br May 2024 - June 2024 </li>
+                        <!-- <li><span>UI/UX Designer</span><br>User Experience</li>
+                        <li><span>Software Engineer</span><br>Development</li> -->
+                    </ul>
+                </div>
+                <div class="tab-contents"id="education">
+                    <ul>
+                        
+                        <li><span>2021  - Current</span><br>Institute of Technology and Management, Gwalior<br>B.Tech - Information Technology</li>
+                        <li><span>2019-2020</span><br>P.C.S Senior Secondary School <br>12th Grade</li>
+                        <li><span>2018-2019</span><br>Adarsh H/S Khudai Sarbahda<br>10th Grade</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+<!-- ----------------------services-------------------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel metus vel ipsum varius laoreet. Donec at orci vel ipsum varius laoreet.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel metus vel ipsum varius laoreet. Donec at orci vel ipsum varius laoreet.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel metus vel ipsum varius laoreet. Donec at orci vel ipsum varius laoreet.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+<!-- <---------------------------Portfolio------------------------------------->
+
+<div id="portfolio">
+    <div class="Container">
+        <h1 class="sub-title">My projects</h1>
+        <div class="work-list">
+            <div class ="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                <h3>Social Media App</h3>
+                <p>The app connects you to the talented people around the world.
+                    Download it from play store.
+                </p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+            <div class ="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                <h3>Social Media App</h3>
+                <p>The app connects you to the talented people around the world.
+                    Download it from play store.
+                </p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+            <div class ="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                <h3>Social Media App</h3>
+                <p>The app connects you to the talented people around the world.
+                    Download it from play store.
+                </p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+</div>
+    <a href="#" class="btn"> See more</a>
+    </div>
+
+    </div>
+    <!-- --------------------------contact---------------- -->
+     <div id="contact">
+    <div class="container">
+        <div class="row">
+
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> sauravp355@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91 8521511458</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="Document/Saurav_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <span id="msgcv"></span>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                <button type="Submit" class="btn btn2"> Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright. Made with <i class="fa-solid fa-heart"></i> by Saurav Kumar</p>
+    </div>
+            </div>
+
+
+<script>
+
+        var tablinks =  document.getElementsByClassName("tab-links");
+        var tabcontents =  document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+        }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+
+
+<script>
+        
+
+        var menu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-20px";
+        }
+    </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyITphOfKJAuPm1XJMF0j_KmmyxZUpaOZc91UZG1I7FUUz12l2YXpyOtEgS1UvWELcraQ/exec'
+    const msgcv = document.getElementById("msgcv")
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+
+            },5000)   <!-- 5000milisecond = 5 seconds -->
+            form.reset()  // reset form after successful submission
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+
+    // For CV Download
+    document.getElementById('msgcv').addEventListener('click', function() {
+        this.innerHTML = 'CV is being downloaded...';
+        setTimeout(function() {
+            this.innerHTML = 'Download CV';
+        }.bind(this), 5000);
+    });
+  </script>
+</body>
+</html>
