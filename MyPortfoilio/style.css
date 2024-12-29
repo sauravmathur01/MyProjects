@@ -191,7 +191,7 @@ nav{
  }
  
  .work-list{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
@@ -262,6 +262,7 @@ nav{
 .btn:hover{
     background-color: #ff004f;
 }
+
 /* ---------------------Contacts-------------------- */
 .contact-left{
     flex-basis: 35%;
