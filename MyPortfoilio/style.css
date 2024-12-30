@@ -9,7 +9,7 @@ html{
 }
 body{
     background: #080808;
-    color: #fff;
+    color: #f4f4f4;
 }
 #header {
     width: 100%;
@@ -20,29 +20,36 @@ body{
     background-position-y: 1px ;
 }
 .container{
+    
     padding: 10px 10% ;   /* Top & Bottom, Left & Right */
 }
 
 nav{
+    background-color: #49323283;
+    border-radius: 10px;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 .logo{
+    
     width: 140px;
 }
  nav ul li{
-    display: inline-block;
+   
+    display:inline-block;
     list-style: none;
     margin: 10px 20px;
  }
 
  nav ul li a{
-    color: #fff;
+    color: #c5b71b;
     text-decoration: none;   /* Remove Underline */
     font-size: 18px;
     position: relative;
+    border-radius: 10px;
  }
 
  nav ul li a::after{
@@ -57,7 +64,6 @@ nav{
  }
  nav ul li a:hover::after{
     width: 100%;
-
  }
  header-text{
     margin-top: 20%;
@@ -144,14 +150,15 @@ nav{
 }
 
  /* ---------------services---------------- */
- #services{
+ /* #services{
     padding: 30px 0;
  }
  .services-list{
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    
     
 
  }
@@ -162,7 +169,7 @@ nav{
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, tranform 0.5s;
-    
+   
  }
  .services-list div i{
     font-size: 50px;
@@ -183,13 +190,123 @@ nav{
  .services-list div:hover{
     background: #ff004f;
     transform: translateY(-10px);
+ } */
+
+ /* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+} */
+
+
+#skills{
+    padding: 30px 0;
+    /* margin-top: 40px; */
+}
+/* .sub-title space{ */
+    /* margin-bottom: 100px; Adjust the value as needed */
+    /* margin-top: 50px; */
+    /* text-align: center; Center the text */
+    /* margin: 20px 0; Optional: Add vertical spacing above and below the header */
+
+.container h1.sub-title-space{
+    margin-bottom: 200px;
+    text-align: center;
+    margin: 56px;
+    font-size: 55px;
  }
+.skills-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-marquee {
+    display: flex;
+    animation: scroll 15s linear infinite;
+    white-space: nowrap;
+}
+.skills-marquee:hover {
+    animation-play-state: paused;
+  
+
+}
+
+.skills {
+    display: flex;
+    gap: 20px;
+}
+
+.skill {
+    background-color: #1c1c1c;
+    padding: 35px 70px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align:center;
+    box-shadow: 0 4px 6px rgba(236, 6, 6, 0.3);
+    color: #a8ffd8;
+    /* font-size: 50px; */
+}
+.ja{
+    font-size: 50px;
+    color: #ff004f;
+    margin-bottom: 0;
+}
+.py{
+    font-size: 50px;
+    color: #ffee00;
+    margin-bottom: 0;
+}
+.js{
+    font-size: 50px;
+    color: #ff004f;
+    margin-bottom: 0;
+}
+.po{
+    font-size: 50px;
+    color: #ff004f;
+    margin-bottom: 0;
+}
+.ec{
+    font-size: 50px;
+    color: #ff004f;
+    margin-bottom: 0;
+}
+.ht{
+    font-size: 50px;
+    color: #f7b603;
+    margin-bottom: 0;
+}
+
+.skill:hover {
+    /* background-color: #ff004f;  */
+    transform: scale(1.1);
+    box-shadow: 0 16px 24px rgba(236, 6, 6, 0.3);
+}
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
 
  /* -----------------Portfoilo-------------------------------- */
  #portfolio{
-    padding: 50px 0;
+    padding: 20px 0;
  }
- 
+ .container h1.sub-title{
+    text-align: center;
+    margin: 20px 0;
+
+ }
  .work-list{
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -307,8 +424,9 @@ form input, form textarea{
     background: #262626;
     padding: 15px;
     margin: 15px 0;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 6px;
+    color: #ffffff;
 }
 
 form .btn2{
@@ -398,3 +516,27 @@ nav .fas{
     margin-top: -40px;
     display: block;
 }
+/* <!-- <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel metus vel ipsum varius laoreet. Donec at orci vel ipsum varius laoreet.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel metus vel ipsum varius laoreet. Donec at orci vel ipsum varius laoreet.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel metus vel ipsum varius laoreet. Donec at orci vel ipsum varius laoreet.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div> -->
+        <!-- <!DOCTYPE html> --> */

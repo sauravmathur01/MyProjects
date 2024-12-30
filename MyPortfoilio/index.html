@@ -11,11 +11,11 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.png" class="logo">
+            <img src="" class="logo">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
@@ -23,7 +23,7 @@
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Web Developer</p>
+            <!-- <p>Web Developer</p> -->
             <h1>Hi, I'm <span>Saurav</span><br> Kumar From India</h1>
         </div>
     </div>
@@ -37,23 +37,25 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel metus vel ipsum varius laoreet. Donec at orci vel ipsum varius laoreet. Donec at orci vel ipsum varius laoreet. Sed vel metus vel ipsum varius laoreet. Donec at orci vel ipsum varius laoreet.</p>
+                <p>Hello! I'm Saurav Kumar from India. With a strong foundation in information technology, I am currently pursuing my B.Tech at the Institute of Technology and Management, Gwalior. My journey in the tech world began with a fascination for coding and problem-solving, which has led me to explore various programming languages and technologies.
+                I have experience in developing interactive applications and data analytics solutions. Recently, I completed a virtual internship with Salesforce, where I gained practical knowledge of CRM features and developed customized applications using Apex and Visualforce.</p>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <!-- <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> -->
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
                     <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
-                <div class="tab-contents active-tab"id="skills">
-                    <ul>
+                 <div class="tab-contents active-tab"id="Skills">
+                    
+                    <!-- <ul>
                         
                         <li><span>Languages:</span><br>Python,Java,HTML,CSS,Basic JavaScript,SQL</li>
                         <li><span>Developer Tools:</span><br>GitHub,Power BI,VS Code, Intellij Idea, Postman, Eclipse
                         </li>
                         <li>Cloud Computing:<span></span><br>AWS (Amazon Web Services)</li>
-                    </ul>
+                    </ul> -->
                 </div>
-                <div class="tab-contents"id="experience">
+                <div class="tab-contents active-tab"id="experience">
                     <ul>
                         
                         <li><span>Salesforce Virtual Internship:</span><br>Developer <br> • Completed modules on Salesforce CRM, gaining practical knowledge of its features and functionalities.<br>
@@ -79,33 +81,52 @@
         </div>
     </div>
 <!-- ----------------------services-------------------- -->
- <div id="services">
+ 
+<div id="skills">
     <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel metus vel ipsum varius laoreet. Donec at orci vel ipsum varius laoreet.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel metus vel ipsum varius laoreet. Donec at orci vel ipsum varius laoreet.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store-ios"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel metus vel ipsum varius laoreet. Donec at orci vel ipsum varius laoreet.</p>
-                <a href="#">Learn more</a>
+        <h1 class="sub-title-space">Skills</h1>
+        <div class="skills-marquee">
+            
+            <!-- <div class="Skills"> -->
+                <div class="skill">
+                    <p><i class="ja fa-brands fa-java"></i><br><br> Java</p></div>
+                <div class="skill">
+                    <i class="py fa-brands fa-python"></i><br><br> Python</div>
+                <div class="skill">
+                    <img src="images/icons8-c++-48.png"><br><br>C++</div>
+                <div class="skill">
+                    <i class="ht fa-brands fa-html5"></i><br><br>HTML</div>
+                <div class="skill">
+                    <img src="images/icons8-css-48.png"><br><br>CSS</div>
+                <div class="skill">
+                    <i class="js fa-brands fa-js"></i><br><br>JavaScript
+                </div>
+                <div class="skill">
+                    <img src="images/icons8-my-sql-48.png"><br><br>My SQL</div>
+                <div class="skill">
+                    <img src="images/icons8-aws-48.png"><br><br>AWS</div>
+                <div class="skill">
+                    <img src="images/icons8-github.gif"><br><br>GitHub</div>
+                <div class="skill">
+                    <img src="images/icons8-power-bi-2021-48.png"><br><br>Power BI</div>
+                <div class="skill">
+                    <img src="images/icons8-vs-code-48.png"><br><br>VS Code</div>
+                <div class="skill">
+                    <img src="images/icons8-intellij-idea-48.png"><br><br>Intellij Idea</div>
+                <div class="skill">
+                    <i class="po fa-solid fa-code"></i><br><br>Postman</div>
+                <div class="skill">
+                    <i class="ec fa-solid fa-code"></i>Eclipse</div>
+
             </div>
         </div>
+        
+    </div>
+</div>
 <!-- <---------------------------Portfolio------------------------------------->
 
 <div id="portfolio">
-    <div class="Container">
+    <div class="container">
         <h1 class="sub-title">My projects</h1>
         <div class="work-list">
             <div class ="work">
@@ -114,17 +135,16 @@
                 <h3>Chat with Zax</h3>
                 <p>Chat with Zax is an interactive voice assistant application that allows users to engage in conversations through text and voice commands, providing answers, jokes, and web search capabilities.
                 </p>
-                <a href=""><i class="fa-solid fa-link"></i></a>
+                <a href="https://github.com/sauravmathur01/MyProjects/tree/8c840829c6ab523d65956f710ab6060558abbaba/MyPortfoilio"><i class="fa-solid fa-link"></i></a>
             </div>
         </div>
             <div class ="work">
-                <img src="images/work-2.png">
+                <img src="images/data_Analytics_logo.png">
                 <div class="layer">
-                <h3>Social Media App</h3>
-                <p>The app connects you to the talented people around the world.
-                    Download it from play store.
+                <h3>Patient Summary Dashboard</h3>
+                <p>The Patient Summary Dashboard is a data analytics application that provides healthcare professionals with a comprehensive overview of patient information, enabling efficient tracking of health metrics and facilitating informed decision-making.
                 </p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+                <a href="https://github.com/sauravmathur01/PowerBI/blob/4e77355afeb4dfe02f8f37888188b43eca873328/Syneos%20Patient%20Dashboard.pbix"><i class="fa-solid fa-link"></i></a>
             </div>
         </div>
             <div class ="work">
@@ -154,8 +174,8 @@
             <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-twitter-square"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/x_sauravmathur/profilecard/?igsh=NWEwNmp5ZDNpeHZ1"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/saurav-kumar-6bab77179?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
             </div>
             <a href="Document/Saurav_Resume.pdf" download class="btn btn2">Download CV</a>
             </div>
