@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celebrity Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Celebrity Hub</h1>
+      <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </div>
+      <input type="text" id="search" placeholder="Search celebrities...">
+      <div class="filters">
+        <select id="profession-filter">
+          <option value="">All Professions</option>
+          <option value="Actor">Actor</option>
+          <option value="Musician">Musician</option>
+          <option value="Athlete">Athlete</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="celebrity-grid"></div>
+      <div class="pagination">
+        <button id="prev-page">Previous</button>
+        <span id="page-info">Page 1 of 1</span>
+        <button id="next-page">Next</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal for detailed celebrity info -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modal-image" src="" alt="">
+      <h2 id="modal-name"></h2>
+      <p id="modal-bio"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Celebrity Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
